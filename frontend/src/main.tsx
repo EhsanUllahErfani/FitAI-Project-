@@ -34,6 +34,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <ThemeProvider>
       <QueryClientProvider client={queryClient}>
         <BrowserRouter
+          basename="/FitAI-Project-"
           future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
         >
           <AuthProvider>
