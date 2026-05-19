@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: fitai-coach-backend
+    runtime: node
+    rootDir: fitai-coach/fitai-coach/fitai-coach/backend
+    buildCommand: npm ci && npm run build && npx prisma generate && npx prisma migrate deploy
+    startCommand: node dist/index.js
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: file:./prod.db
+      - key: CLIENT_URL
+        value: https://ehsanullaherfani.github.io
+      - key: GROQ_MODEL
+        value: llama-3.1-8b-instant
+      - key: GROQ_VISION_MODEL
+        value: meta-llama/llama-4-scout-17b-16e-instruct
+      - key: JWT_SECRET
+        value: 04140673c12148c4ce62be2e2e572d8dd33896f8803da94aae68fc3a2a6ea0af
+      - key: GROQ_API_KEY
+        sync: false
