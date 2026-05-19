@@ -12,4 +12,4 @@ Disallow: /music
 Disallow: /profile
 Disallow: /onboarding
 
-Sitemap: https://fitai.app/sitemap.xml
+Sitemap: https://fitaicoach.com/sitemap.xml

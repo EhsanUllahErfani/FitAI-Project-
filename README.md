@@ -183,9 +183,9 @@ cd backend && npm run build
 4. Update `VITE_API_URL` in Vercel to use your custom backend domain.
 
 **After setting your domain — update these files:**
-- `frontend/public/robots.txt` — replace `fitai.app` with your real domain
-- `frontend/public/sitemap.xml` — replace `fitai.app` with your real domain
-- `frontend/index.html` — replace all `fitai.app` occurrences with your real domain
+- `frontend/public/robots.txt` — replace `fitaicoach.com` with your real domain
+- `frontend/public/sitemap.xml` — replace `fitaicoach.com` with your real domain
+- `frontend/index.html` — replace all `fitaicoach.com` occurrences with your real domain
 - Redeploy to Vercel.
 
 ### Step 4 — Submit to Google Search Console
