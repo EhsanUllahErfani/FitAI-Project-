@@ -20,40 +20,8 @@ export interface Track {
   custom?: boolean;  // true = added by the user at runtime
 }
 
-// Five default workout tracks pointing to local public/music/ files.
-// Replace the MP3 files on disk to change what plays.
-export const DEFAULT_TRACKS: Track[] = [
-  {
-    id: "default-1",
-    title: "Warmup Pulse",
-    bpm: 116,
-    src: "/music/warmup-pulse.mp3",
-  },
-  {
-    id: "default-2",
-    title: "Strength Focus",
-    bpm: 128,
-    src: "/music/strength-focus.mp3",
-  },
-  {
-    id: "default-3",
-    title: "Cooldown Flow",
-    bpm: 96,
-    src: "/music/cooldown-flow.mp3",
-  },
-  {
-    id: "default-4",
-    title: "Power Drive",
-    bpm: 140,
-    src: "/music/power-drive.mp3",
-  },
-  {
-    id: "default-5",
-    title: "Endurance Run",
-    bpm: 132,
-    src: "/music/endurance-run.mp3",
-  },
-];
+// No built-in tracks — upload your own MP3s from the Music page.
+export const DEFAULT_TRACKS: Track[] = [];
 
 // localStorage key used to persist the user's custom track list.
 export const STORAGE_KEY = "fitai-playlist";

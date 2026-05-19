@@ -20,6 +20,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import type { ReactNode } from "react";
 import Layout from "./components/Layout";
 import { ProtectedRoute } from "./modules/auth/components/ProtectedRoute";
+import { MusicProvider } from "./modules/music/context/MusicContext";
 import { authRoutes } from "./modules/auth/routers/authRouter";
 import { calorieRoutes } from "./modules/calorie-check/routers/calorieRouter";
 import { chatRoutes } from "./modules/chat/routers/chatRouter";
@@ -86,14 +87,16 @@ function renderElement(route: AppRoute) {
 // <Route> with the element processed by renderElement.
 export default function App() {
   return (
-    <Routes>
-      {appRoutes.map((route) => (
-        <Route
-          key={route.path}
-          path={route.path}
-          element={renderElement(route)}
-        />
-      ))}
-    </Routes>
+    <MusicProvider>
+      <Routes>
+        {appRoutes.map((route) => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={renderElement(route)}
+          />
+        ))}
+      </Routes>
+    </MusicProvider>
   );
 }
