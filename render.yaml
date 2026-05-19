@@ -2,9 +2,9 @@ services:
   - type: web
     name: fitai-coach-backend
     runtime: node
-    rootDir: fitai-coach/fitai-coach/fitai-coach/backend
-    buildCommand: npm ci && npm run build && npx prisma generate && npx prisma migrate deploy
-    startCommand: node dist/index.js
+    rootDir: backend
+    buildCommand: npm ci && npx prisma generate && npm run build
+    startCommand: npx prisma migrate deploy && node dist/index.js
     plan: free
     envVars:
       - key: NODE_ENV
