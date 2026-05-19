@@ -8,3 +8,12 @@ healthcheckPath = "/api/health"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
+
+# Non-secret defaults — Railway reads these automatically.
+# You only need to add JWT_SECRET and GROQ_API_KEY manually in the Railway dashboard.
+[variables]
+NODE_ENV = "production"
+GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_VISION_MODEL = "meta-llama/llama-4-scout-17b-16e-instruct"
+CLIENT_URL = "https://fitaicoach.vercel.app"
+DATABASE_URL = "file:./prisma/prod.db"
