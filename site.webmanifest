@@ -1,0 +1,23 @@
+{
+  "name": "FitAI Coach by Ehsan Ullah Erfani",
+  "short_name": "FitAI Coach",
+  "description": "AI-powered fitness and nutrition coaching. Generate personalized workout plans, meal plans, and chat with your AI fitness coach.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07070b",
+  "theme_color": "#e11d48",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}
