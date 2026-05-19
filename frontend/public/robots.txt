@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block authenticated app pages from crawling
+Disallow: /dashboard
+Disallow: /workouts
+Disallow: /meals
+Disallow: /calorie-check
+Disallow: /supplements
+Disallow: /chat
+Disallow: /music
+Disallow: /profile
+Disallow: /onboarding
+
+Sitemap: https://YOUR_DOMAIN.com/sitemap.xml
